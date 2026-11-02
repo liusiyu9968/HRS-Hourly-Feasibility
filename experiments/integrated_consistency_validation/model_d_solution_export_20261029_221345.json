@@ -1,0 +1,62 @@
+{
+  "experiment": "model_d_solution_export",
+  "timestamp": "20261029_221345",
+  "reproducibility": {
+    "original_run_opex": 39999163.38,
+    "this_run_opex": 39999163.38260656,
+    "difference": 0.0026065558195114136,
+    "verified": true
+  },
+  "solver": {
+    "status": 2,
+    "runtime": 966.5989999771118,
+    "variable_count": 67200,
+    "constraint_count": 109200,
+    "feasible": true,
+    "gap": 0.0,
+    "best_bound": 39999163.38260656,
+    "status_str": "OPTIMAL"
+  },
+  "costs": {
+    "opex_optimized": 39999163.38260656,
+    "opex_optimized_\u4e07\u5143": 3999.9163382606557,
+    "opex_breakdown": {
+      "hydrogen": 32054511.127648838,
+      "hydrogen_\u4e07\u5143": 3205.451112764884,
+      "electricity": 4579215.875378406,
+      "electricity_\u4e07\u5143": 457.9215875378406,
+      "trailer": 3365436.3795792945,
+      "trailer_\u4e07\u5143": 336.54363795792943
+    },
+    "capex_fixed": 6355418.381344307,
+    "capex_fixed_\u4e07\u5143": 635.5418381344307,
+    "total_cost": 46354581.76395087,
+    "total_cost_\u4e07\u5143": 4635.458176395086
+  },
+  "fixed_capacities": {
+    "C": {
+      "1": 100,
+      "2": 150,
+      "3": 150,
+      "4": 250,
+      "5": 250
+    },
+    "S": {
+      "1": 158,
+      "2": 158,
+      "3": 358,
+      "4": 358,
+      "5": 358
+    },
+    "K": {
+      "1": 120,
+      "2": 120,
+      "3": 240,
+      "4": 240,
+      "5": 240
+    }
+  },
+  "solution_files": {
+    "hourly_csv": "model_d_hourly_solution_20261029_221345.csv"
+  }
+}

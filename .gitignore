@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.gurobi/
+gurobi.lic
+**/*.log
+**/*.lp
+**/*.mps
+**/*.ilp
+**/*.sol
+# Restricted datasets and raw records:
+data/raw/
+enterprise data/
+data/processed/*.csv
+experiments/integrated_consistency_validation/model_d_hourly_solution_*.csv
+experiments/integrated_consistency_validation/final_model_equivalence_fix/integrated_corrected_hourly_*.csv
+# Runtime outputs:
+experiments/**/*_result_20*.json
+experiments/**/*_result_20*.csv
+
+# Keep recorded, non-sensitive reference outputs under version control:
+!experiments/integrated_capex_control/integrated_capex_only_result_20261028_212724.json
+!experiments/integrated_consistency_validation/final_model_equivalence_fix/integrated_corrected_result_20261030_131154.json

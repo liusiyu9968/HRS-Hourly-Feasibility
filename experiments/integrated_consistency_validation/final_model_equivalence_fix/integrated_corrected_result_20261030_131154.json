@@ -1,0 +1,106 @@
+{
+  "experiment": "integrated_corrected",
+  "timestamp": "20261030_131154",
+  "formulation_fix": {
+    "description": "Investment constraint corrected to match original model",
+    "original_constraint": "Each expansion OPTION purchased at most once across T periods",
+    "previous_error": "Each asset CLASS limited to one option per period",
+    "fix_applied": "Restored option-level constraint: sum over t (x[option,t]) <= 1"
+  },
+  "mip_start_source": {
+    "solution_file": "../model_d_hourly_solution_20261029_221345.csv",
+    "summary_file": "../model_d_solution_export_20261029_221345.json",
+    "total_cost_\u4e07\u5143": 4635.458176395086
+  },
+  "configuration": {
+    "model_version": "Model Freeze v1.0",
+    "growth_rate": 0.15,
+    "LT": 1,
+    "s0": 158,
+    "scenario": "Central Case",
+    "objective": "min CAPEX+OPEX",
+    "data_file": "../../../data/processed/representative_weeks_FixedEP_W10_FINAL.csv",
+    "data_hash": "f369a035b6efd129e1a149d9d08c14920188f92b4fd359d5f0540aaad55ad9ef"
+  },
+  "solver": {
+    "status": 9,
+    "status_str": "TIME_LIMIT",
+    "runtime": 1806.673229,
+    "variable_count": 67275,
+    "constraint_count": 109301,
+    "feasible": true,
+    "gap": 0.00232130597651407,
+    "best_bound": 46246978.57473456
+  },
+  "costs": {
+    "total": 46354581.74237194,
+    "total_\u4e07\u5143": 4635.458174237194,
+    "capex": 6355418.381344307,
+    "capex_\u4e07\u5143": 635.5418381344307,
+    "opex": 39999163.36102763,
+    "opex_\u4e07\u5143": 3999.9163361027627
+  },
+  "investments": [
+    {
+      "period": 1,
+      "asset": "C",
+      "option": 0,
+      "capacity": 50,
+      "cost": 1400000
+    },
+    {
+      "period": 2,
+      "asset": "S",
+      "option": 1,
+      "capacity": 200,
+      "cost": 1400000
+    },
+    {
+      "period": 2,
+      "asset": "K",
+      "option": 1,
+      "capacity": 120,
+      "cost": 2100000
+    },
+    {
+      "period": 3,
+      "asset": "C",
+      "option": 1,
+      "capacity": 100,
+      "cost": 2000000
+    }
+  ],
+  "capacity_trajectory": {
+    "1": {
+      "C": 100.0,
+      "S": 158.0,
+      "K": 120.0
+    },
+    "2": {
+      "C": 150.0,
+      "S": 158.0,
+      "K": 120.0
+    },
+    "3": {
+      "C": 150.0,
+      "S": 358.0,
+      "K": 240.0
+    },
+    "4": {
+      "C": 250.0,
+      "S": 358.0,
+      "K": 240.0
+    },
+    "5": {
+      "C": 250.0,
+      "S": 358.0,
+      "K": 240.0
+    }
+  },
+  "comparison_with_model_d": {
+    "model_d_total_\u4e07\u5143": 4635.458176395087,
+    "integrated_total_\u4e07\u5143": 4635.458174237194,
+    "difference_\u4e07\u5143": -2.157893031835556e-06,
+    "difference_pct": -4.655188224594685e-08
+  }
+}

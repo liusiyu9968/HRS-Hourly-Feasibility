@@ -1,0 +1,3 @@
+# Restricted Model D warm start
+
+The 8,400-row hourly operating trajectory `model_d_hourly_solution_20261029_221345.csv` is deliberately **not included** in the public source release, because it contains demand-derived hourly values. Its paired non-hourly metadata file is included. To reproduce C+ exactly, obtain permission for the empirical input and the Model D trajectory, or execute `export_model_d_solution.py` with authorized input to generate a compatible new trajectory and summary. The original C+ script uses timestamped relative filenames; the launcher selects newer generated pairs when available.

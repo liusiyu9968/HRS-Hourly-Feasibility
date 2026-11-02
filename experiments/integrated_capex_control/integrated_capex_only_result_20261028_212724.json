@@ -1,0 +1,86 @@
+{
+  "experiment": "integrated_capex_only",
+  "timestamp": "20261028_212724",
+  "configuration": {
+    "model_version": "Model Freeze v1.0",
+    "growth_rate": 0.15,
+    "LT": 1,
+    "s0": 158,
+    "scenario": "Central Case",
+    "objective": "min CAPEX (NOT CAPEX+OPEX)",
+    "data_file": "../../data/processed/representative_weeks_FixedEP_W10_FINAL.csv",
+    "data_hash": "f369a035b6efd129e1a149d9d08c14920188f92b4fd359d5f0540aaad55ad9ef"
+  },
+  "solver": {
+    "status": 2,
+    "runtime": 21.762210845947266,
+    "variable_count": 67275,
+    "constraint_count": 109301,
+    "feasible": true,
+    "gap": 0.0,
+    "best_bound": 6355418.381344307,
+    "status_str": "OPTIMAL"
+  },
+  "costs": {
+    "capex": 6355418.381344307,
+    "capex_万元": 635.5418381344307,
+    "opex": 42460770.10282572,
+    "opex_万元": 4246.077010282573,
+    "opex_note": "Computed from CAPEX-minimizing dispatch; NOT minimum OPEX for this investment",
+    "total": 48816188.484170035,
+    "total_万元": 4881.618848417003
+  },
+  "investments": [
+    {
+      "period": 1,
+      "asset": "C",
+      "capacity": 50,
+      "cost": 1400000
+    },
+    {
+      "period": 2,
+      "asset": "S",
+      "capacity": 200,
+      "cost": 1400000
+    },
+    {
+      "period": 2,
+      "asset": "K",
+      "capacity": 120,
+      "cost": 2100000
+    },
+    {
+      "period": 3,
+      "asset": "C",
+      "capacity": 100,
+      "cost": 2000000
+    }
+  ],
+  "capacity": {
+    "1": {
+      "C": 100.0,
+      "S": 158.0,
+      "K": 120.0
+    },
+    "2": {
+      "C": 150.0,
+      "S": 158.0,
+      "K": 120.0
+    },
+    "3": {
+      "C": 150.0,
+      "S": 358.0,
+      "K": 240.0
+    },
+    "4": {
+      "C": 250.0,
+      "S": 358.0,
+      "K": 240.0
+    },
+    "5": {
+      "C": 250.0,
+      "S": 358.0,
+      "K": 240.0
+    }
+  }
+}

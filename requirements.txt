@@ -1,0 +1,5 @@
+# The study used Gurobi 13.0.1. A valid Gurobi license is required.
+gurobipy>=13.0,<14
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7

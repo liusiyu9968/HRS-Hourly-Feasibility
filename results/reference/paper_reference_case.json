@@ -1,0 +1,56 @@
+{
+  "note": "Recorded outputs supplied with the author project; not reproduced in this packaging environment.",
+  "unit": "10^4 CNY",
+  "source_data_sha256": "f369a035b6efd129e1a149d9d08c14920188f92b4fd359d5f0540aaad55ad9ef",
+  "A": {
+    "screened_capex": 379.29,
+    "hourly_verification": "INFEASIBLE",
+    "stage1_status": "OPTIMAL"
+  },
+  "B": {
+    "capex": 635.5418381344307,
+    "incidental_dispatch_opex": 4246.077010282573,
+    "status": "OPTIMAL",
+    "gap": 0.0
+  },
+  "D": {
+    "fixed_capex": 635.5418381344307,
+    "opex": 3999.9163382606557,
+    "total": 4635.458176395086,
+    "status": "OPTIMAL",
+    "achieved_gap_approx_percent": 0.0998,
+    "note": "Nonzero stopping tolerance; see manuscript evidence and original export."
+  },
+  "C_plus": {
+    "total": 4635.458174237194,
+    "capex": 635.5418381344307,
+    "opex": 3999.9163361027627,
+    "status": "TIME_LIMIT",
+    "gap_percent": 0.232130597651407,
+    "best_bound": 4624.697857473456,
+    "variables": 67275,
+    "constraints": 109301
+  },
+  "published_investments": [
+    {
+      "period": 1,
+      "asset": "C",
+      "capacity_increment": 50
+    },
+    {
+      "period": 2,
+      "asset": "S",
+      "capacity_increment": 200
+    },
+    {
+      "period": 2,
+      "asset": "K",
+      "capacity_increment": 120
+    },
+    {
+      "period": 3,
+      "asset": "C",
+      "capacity_increment": 100
+    }
+  ]
+}
