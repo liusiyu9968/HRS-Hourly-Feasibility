@@ -69,3 +69,17 @@ before using any plotting script.
 The release scripts retain their original computational logic, with a previously hardcoded Gurobi `LicenseID` removed from selected source files. Your own solver license is required. **No open-source license has been chosen by the authors**; public availability of this code does not automatically grant permission to modify/redistribute it. Select a license (e.g., MIT or BSD-3-Clause) before public release if desired.
 
 An executable Gurobi environment was unavailable during packaging. Validation comprises Python syntax compilation, source-file inclusion, data-file hash checking (private bundle), an offline consistency check of recorded output values, and public-package confidential-data screening; **no full MILP re-solve was performed**.
+
+## License
+
+Copyright (c) 2026 Siyu Liu.
+
+The original research source code in this repository is
+licensed under the BSD 3-Clause License. See [LICENSE](LICENSE).
+
+The license applies to the research source code and does not
+grant access to confidential hydrogen refueling station data.
+
+The Gurobi optimizer is a third-party dependency and requires
+a separate license.
+
