@@ -66,7 +66,7 @@ before using any plotting script.
 
 ## Repository status, licensing, and limitations
 
-The release scripts retain their original computational logic, with a previously hardcoded Gurobi `LicenseID` removed from selected source files. Your own solver license is required. **No open-source license has been chosen by the authors**; public availability of this code does not automatically grant permission to modify/redistribute it. Select a license (e.g., MIT or BSD-3-Clause) before public release if desired.
+The release scripts retain their original computational logic, with a previously hardcoded Gurobi `LicenseID` removed from selected source files. Your own solver license is required.
 
 An executable Gurobi environment was unavailable during packaging. Validation comprises Python syntax compilation, source-file inclusion, data-file hash checking (private bundle), an offline consistency check of recorded output values, and public-package confidential-data screening; **no full MILP re-solve was performed**.
 
