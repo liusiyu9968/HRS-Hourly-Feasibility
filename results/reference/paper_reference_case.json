@@ -1,5 +1,5 @@
 {
-  "note": "Recorded outputs supplied with the author project; not reproduced in this packaging environment.",
+  "note": "Original recorded reference-case values. Author reruns in Nov 2026 are separately documented in REPRODUCTION_STATUS.md; Model D achieved the same OPEX with a different time-limit gap.",
   "unit": "10^4 CNY",
   "source_data_sha256": "f369a035b6efd129e1a149d9d08c14920188f92b4fd359d5f0540aaad55ad9ef",
   "A": {

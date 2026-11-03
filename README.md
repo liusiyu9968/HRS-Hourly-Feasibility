@@ -43,7 +43,7 @@ All money values in `10^4 CNY`. This is a *record of supplied result files*, not
 |---|---:|---:|---|
 | A1/A2 | 379.29 | — | A1 OPTIMAL; A2 INFEASIBLE |
 | B | 635.541838 | 4246.077010 | OPTIMAL for CAPEX; OPEX of incidental feasible dispatch |
-| D | 635.541838 | 3999.916338 | Fixed-investment OPEX control; within prescribed solver tolerance |
+| D | 635.541838 | 3999.916338 | Author rerun: TIME_LIMIT, 0.1283% MIP gap; earlier archived run: 0.0998% gap |
 | C+ | 635.541838 | 3999.916336 | TIME_LIMIT, best-known total 4635.458174; gap 0.2321% |
 
 See `results/reference/paper_reference_case.json` for the corresponding numerical record.
@@ -66,20 +66,13 @@ before using any plotting script.
 
 ## Repository status, licensing, and limitations
 
-The release scripts retain their original computational logic, with a previously hardcoded Gurobi `LicenseID` removed from selected source files. Your own solver license is required.
+The original research source code is licensed under the [BSD 3-Clause License](LICENSE), copyright (c) 2026 Siyu Liu. This license does not license restricted station data or third-party dependencies such as Gurobi. Users must obtain their own solver license. The model formulations were not changed during publication preparation; explanatory text, output-unit labels, and packaging were updated.
 
-An executable Gurobi environment was unavailable during packaging. Validation comprises Python syntax compilation, source-file inclusion, data-file hash checking (private bundle), an offline consistency check of recorded output values, and public-package confidential-data screening; **no full MILP re-solve was performed**.
+The author re-executed the core reference-case models with Gurobi 13.0.1 on Windows in November 2026. See [REPRODUCTION_STATUS.md](REPRODUCTION_STATUS.md) for the observed results and solver qualifications, especially the difference between a matching feasible Model D cost and its nonmatching time-limit gap. The input data and hour-by-hour warm start remain restricted; this repository does not provide a public end-to-end numerical reproduction.
 
-## License
+The public release excludes an older Model D export-metadata JSON whose reported zero MIP gap was a serialization error. The exporter source now records `m.MIPGap` and `m.ObjBound` directly. The archived research baseline and the independent rerun are documented separately. The earlier metadata may still be visible in repository history; it must not be used as an optimality certificate.
 
-Copyright (c) 2026 Siyu Liu.
 
-The original research source code in this repository is
-licensed under the BSD 3-Clause License. See [LICENSE](LICENSE).
+## Code license
 
-The license applies to the research source code and does not
-grant access to confidential hydrogen refueling station data.
-
-The Gurobi optimizer is a third-party dependency and requires
-a separate license.
-
+Copyright (c) 2026 Siyu Liu. The original research source code is licensed under [BSD-3-Clause](LICENSE). The station data and proprietary solver have separate access/licensing requirements.

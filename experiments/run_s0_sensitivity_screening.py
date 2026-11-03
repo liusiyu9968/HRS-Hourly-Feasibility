@@ -194,7 +194,7 @@ def run_sequential_s1_for_s0(s0_value):
 
         for w in range(1, p['W']+1):
             week = weeks_data[w]
-            # Service capacity (kg/min)
+            # Service capacity (min/h)
             m1.addConstr(K[t] >= rho_t * week['G_peak'])
             # Demand windows with buffer
             m1.addConstr(rho_t * week['D_1h'] <= C[t] + B_avail)

@@ -22,3 +22,12 @@ experiments/**/*_result_20*.csv
 # Keep recorded, non-sensitive reference outputs under version control:
 !experiments/integrated_capex_control/integrated_capex_only_result_20261028_212724.json
 !experiments/integrated_consistency_validation/final_model_equivalence_fix/integrated_corrected_result_20261030_131154.json
+
+# Additional safeguards for new internal solver exports (previously tracked files
+# remain tracked; inspect git history before changing repository visibility):
+*.lic
+*.key
+**/*hourly*.csv
+**/*trajectory*.csv
+**/representative_weeks*.csv
+experiments/integrated_consistency_validation/model_d_solution_export_*.json

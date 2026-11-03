@@ -141,7 +141,7 @@ def run_integrated_capex_only():
     print(f"  Planning periods: T={T}")
     print(f"  Representative weeks: W={p['W']}")
     print(f"  Hours per week: H={p['H']}")
-    print(f"  Initial capacities: C₀={p['C_0']} kg/h, S₀={s0} kg, K₀={p['K_srv_0']} kg/min")
+    print(f"  Initial capacities: C₀={p['C_0']} kg/h, S₀={s0} kg, K₀={p['K_srv_0']} min/h")
     print(f"  Lead times: LT_C={p['LT_C']}, LT_S={p['LT_S']}, LT_K={p['LT_K']}")
     print(f"  Discount rate: r={p['discount_rate']*100:.0f}%")
 
@@ -478,7 +478,7 @@ def run_integrated_capex_only():
         result['capacity'] = capacity
 
         print(f"\nCapacity trajectory:")
-        print(f"{'Period':<8} {'C (kg/h)':<12} {'S (kg)':<12} {'K (kg/min)':<12}")
+        print(f"{'Period':<8} {'C (kg/h)':<12} {'S (kg)':<12} {'K (min/h)':<12}")
         print("-"*44)
         for t in range(1, T+1):
             cap = capacity[str(t)]
